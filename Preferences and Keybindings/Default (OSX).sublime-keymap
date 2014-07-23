@@ -1,0 +1,23 @@
+[
+    { "keys": ["alt+space"], "command": "insert_snippet", "args": {"contents": " " } },
+    { "keys": ["alt+-"], "command": "valign" },
+    { "keys": ["alt+u"], "command": "permute_lines", "args": {"operation": "unique"} },
+    {
+        "keys": ["super+c"], "command": "noop", "context":
+        [
+            { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+            { "key": "preceding_text", "operator": "regex_match", "operand": "^\\s*$", "match_all": true },
+            { "key": "following_text", "operator": "regex_match", "operand": "^\\s*$", "match_all": true }
+        ]
+    },
+    {
+        "keys": ["super+x"], "command": "noop", "context":
+        [
+            { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+            { "key": "preceding_text", "operator": "regex_match", "operand": "^\\s*$", "match_all": true },
+            { "key": "following_text", "operator": "regex_match", "operand": "^\\s*$", "match_all": true }
+        ]
+    },
+    { "keys": ["super+v"], "command": "paste_and_indent" },
+    { "keys": ["super+shift+v"], "command": "paste" },
+]

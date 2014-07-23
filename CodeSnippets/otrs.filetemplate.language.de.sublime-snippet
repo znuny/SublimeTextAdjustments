@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+# --
+# Kernel/Language/de_$1.pm - the german translation of the texts of $1
+# Copyright (C) 2014 Znuny GmbH, http://znuny.com/
+# --
+
+package Kernel::Language::de_$1;
+
+use strict;
+use warnings;
+
+sub Data {
+    my \$Self = shift;
+
+    return 1;
+}
+
+1;
+]]></content>
+	<tabTrigger>otrs.filetemplate.language.de</tabTrigger>
+</snippet>
