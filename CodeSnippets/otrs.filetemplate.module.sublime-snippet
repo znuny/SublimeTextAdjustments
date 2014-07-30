@@ -23,7 +23,7 @@ sub new {
 
         next NEEDED if defined \$Self->{\$Needed};
 
-        my \$ErrorMessage = "Got no \$Needed for creating $1Object!"
+        my \$ErrorMessage = "Got no \$Needed for creating $1Object!";
 
         \$Self->{LayoutObject}->FatalError(
             Message => \$ErrorMessage,
