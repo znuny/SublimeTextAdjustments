@@ -58,7 +58,7 @@ Required parameters:
 Optional parameters:
     -[-a]rray   - list, multiple values by using flag -a multiple times
     -[-s]tring  - string
-    -[-h]elp    - view this help text\n";
+    -[-h]elp    - print this help text\n";
     exit 0;
 }
 
