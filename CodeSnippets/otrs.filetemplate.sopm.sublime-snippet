@@ -37,7 +37,23 @@
 
         <File Permission="644" Location="Kernel/Output/HTML/.pm"/>
 
+        <File Permission="644" Location="Kernel/System/.pm"/>
+
+        <File Permission="644" Location="Kernel/System/Stats/Static/.pm"/>
+        <File Permission="644" Location="Kernel/System/Stats/Dynamic/.pm"/>
+
+
         <File Permission="644" Location="var/packagesetup/${5:Znuny4OTRS}.pm"/>
+
+        <File Permission="644" Location="var/httpd/htdocs/js/Core.Agent.Admin..js"/>
+        <File Permission="644" Location="var/httpd/htdocs/js/Core.Agent..js"/>
+        <File Permission="644" Location="var/httpd/htdocs/js/Core.Customer..js"/>
+
+        <File Permission="644" Location="var/httpd/htdocs/skins/Agent/default/css/Core.Agent.Admin..css"/>
+        <File Permission="644" Location="var/httpd/htdocs/skins/Agent/default/css/Core.Agent..css"/>
+        <File Permission="644" Location="var/httpd/htdocs/skins/Customer/default/css/Core.Customer..css"/>
+
+        <File Permission="644" Location=""/>
     </Filelist>
 </otrs_package>
 ]]></content>

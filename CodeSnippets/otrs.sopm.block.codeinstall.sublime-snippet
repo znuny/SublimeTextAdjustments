@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+<CodeInstall Type="${1:post|pre}"><![CDATA[
+    return if !\$Self->{MainObject}->Require('Kernel::System::ZnunyHelper');
+
+    my \$HelperObject = Kernel::System::ZnunyHelper->new();
+
+    $2
+
+${3:]]}></CodeInstall>
+]]></content>
+    <tabTrigger>otrs.sopm.block.codeinstall</tabTrigger>
+</snippet>

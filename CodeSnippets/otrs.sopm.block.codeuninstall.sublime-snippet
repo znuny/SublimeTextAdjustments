@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+<CodeUninstall Type="${1:post|pre}"><![CDATA[
+    return if !\$Self->{MainObject}->Require('Kernel::System::ZnunyHelper');
+
+    my \$HelperObject = Kernel::System::ZnunyHelper->new();
+
+    $2
+
+${3:]]}></CodeUninstall>
+]]></content>
+    <tabTrigger>otrs.sopm.block.codeuninstall</tabTrigger>
+</snippet>
