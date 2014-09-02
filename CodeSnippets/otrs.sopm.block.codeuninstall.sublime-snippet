@@ -5,6 +5,27 @@
 
     my \$HelperObject = Kernel::System::ZnunyHelper->new();
 
+    my @DynamicFieldRemove = ( 'Field1', 'Field2' );
+    $Helper->_DynamicFieldsDisable( @DynamicFieldRemove );
+    $Helper->_DynamicFieldsDelete( @DynamicFieldRemove );
+
+
+    my %DynamicFieldDisableScreen = (
+        # AgentTicket* / CustomerTicket* => {
+        #     DynamicFieldNameWithoutPrefix => 1,
+        # },
+    );
+    $Helper->_DynamicFieldsScreenEnable( %DynamicFieldDisableScreen );
+
+
+    my %LoaderData = (
+        AgentTicketPhone => [
+                                'Core.Agent.WPTicketOEChange.js',
+                                'Core.Agent.WPTicketOEChange.css',
+                            ],
+    );
+    $Helper->_LoaderRemove( %LoaderData );
+
     $2
 
 ${3:]]}></CodeUninstall>
