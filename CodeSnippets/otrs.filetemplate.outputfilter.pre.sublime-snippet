@@ -24,7 +24,7 @@ sub new {
         \$Self->{\$Needed} = \$Param{\$Needed} || die "Got no \$Needed!";
     }
 
-    \$Self->{Action} = $Param{Action} || '';
+    \$Self->{Action} = \$Param{Action} || '';
 
     return \$Self;
 }
@@ -33,6 +33,7 @@ sub Run {
     my ( \$Self, %Param ) = @_;
 
     # check Action param
+    return 1 if !$Self->{Action};
     return 1 if \$Self->{Action} ne '';
     return 1 if !scalar grep { \$Self->{Action} eq \$_ } qw();
 
@@ -43,6 +44,24 @@ sub Run {
 
     # check regular parameter
     return 1 if !\$Self->{ParamObject}->GetParam( Param => '' );
+
+    # create needed objects
+    for my \$RequiredObject (qw(Encode DB Time Ticket)) {
+
+        my \$Module = 'Kernel::System::' . \$RequiredObject;
+
+        if ( !\$Self->{MainObject}->Require(\$Module) ) {
+            \$Self->{LogObject}->Log(
+                Priority => 'error',
+                Message  => "Error while creating needed object '\$RequiredObject'",
+            );
+            return 1;
+        }
+
+        # create new instance
+        \$Self->{ \$RequiredObject . 'Object' } = \$Module->new( %{\$Self} );
+    }
+
 
 
     # manipulate HTML content
