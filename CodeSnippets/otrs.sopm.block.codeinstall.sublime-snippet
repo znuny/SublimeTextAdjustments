@@ -11,8 +11,8 @@
         # otherwise check the structure out here:
         # https://github.com/znuny/SublimeTextAdjustments/tree/master/CodeSnippets
     );
-    $Helper->_DynamicFieldsCreateIfNotExists( @DynamicFieldCreateStructure );
-    $Helper->_DynamicFieldsCreate( @DynamicFieldCreateStructure );
+    \$Helper->_DynamicFieldsCreateIfNotExists( @DynamicFieldCreateStructure );
+    \$Helper->_DynamicFieldsCreate( @DynamicFieldCreateStructure );
 
 
     my %DynamicFieldEnableScreen = (
@@ -20,7 +20,7 @@
         #     DynamicFieldNameWithoutPrefix => 1,
         # },
     );
-    $Helper->_DynamicFieldsScreenEnable( %DynamicFieldEnableScreen );
+    \$Helper->_DynamicFieldsScreenEnable( %DynamicFieldEnableScreen );
 
 
     my %LoaderData = (
@@ -29,18 +29,18 @@
                                 'Core.Agent.WPTicketOEChange.css',
                             ],
     );
-    $Helper->_LoaderAdd( %LoaderData );
+    \$Helper->_LoaderAdd( %LoaderData );
 
 
     my %GroupAttributes = (
         Name => 'Group Name 123', # required
         # ...
     );
-    $Helper->_GroupCreateIfNotExists( %GroupAttributes );
+    \$Helper->_GroupCreateIfNotExists( %GroupAttributes );
 
 
-    # parameter order $Type, $Lang, $Subject, $Body
-    $Helper->_NotificationCreateIfNotExists( 'Agent::PvD::NewTicket', 'de', 'sub', 'body' );
+    # parameter order \$Type, \$Lang, \$Subject, \$Body
+    \$Helper->_NotificationCreateIfNotExists( 'Agent::PvD::NewTicket', 'de', 'sub', 'body' );
 
     $2
 

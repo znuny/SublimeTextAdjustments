@@ -6,8 +6,8 @@
     my \$HelperObject = Kernel::System::ZnunyHelper->new();
 
     my @DynamicFieldRemove = ( 'Field1', 'Field2' );
-    $Helper->_DynamicFieldsDisable( @DynamicFieldRemove );
-    $Helper->_DynamicFieldsDelete( @DynamicFieldRemove );
+    \$Helper->_DynamicFieldsDisable( @DynamicFieldRemove );
+    \$Helper->_DynamicFieldsDelete( @DynamicFieldRemove );
 
 
     my %DynamicFieldDisableScreen = (
@@ -15,7 +15,7 @@
         #     DynamicFieldNameWithoutPrefix => 1,
         # },
     );
-    $Helper->_DynamicFieldsScreenEnable( %DynamicFieldDisableScreen );
+    \$Helper->_DynamicFieldsScreenEnable( %DynamicFieldDisableScreen );
 
 
     my %LoaderData = (
@@ -24,7 +24,7 @@
                                 'Core.Agent.WPTicketOEChange.css',
                             ],
     );
-    $Helper->_LoaderRemove( %LoaderData );
+    \$Helper->_LoaderRemove( %LoaderData );
 
     $2
 
