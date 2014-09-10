@@ -33,7 +33,7 @@ sub Run {
     my ( \$Self, %Param ) = @_;
 
     # check Action param
-    return 1 if !$Self->{Action};
+    return 1 if !\$Self->{Action};
     return 1 if \$Self->{Action} ne '';
     return 1 if !scalar grep { \$Self->{Action} eq \$_ } qw();
 
