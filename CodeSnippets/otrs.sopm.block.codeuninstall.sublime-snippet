@@ -1,6 +1,10 @@
 <snippet>
     <content><![CDATA[
-<CodeUninstall Type="${1:post|pre}"><![CDATA[
+<CodeUninstall Type="${1:post|pre}"${2: Version="1.0.0"}><![CDATA[
+# Notes on "Version" attribute:
+# skipped if \$UploadPackageVersion     < \$CodeBlockVersion
+# skipped if \$InstalledPackageVersion >= \$CodeBlockVersion
+
     return if !\$Self->{MainObject}->Require('Kernel::System::ZnunyHelper');
 
     my \$HelperObject = Kernel::System::ZnunyHelper->new();
@@ -26,9 +30,9 @@
     );
     \$HelperObject->_LoaderRemove( %LoaderData );
 
-    $2
+    $3
 
-${3:]]}></CodeUninstall>
+${4:]]}></CodeUninstall>
 ]]></content>
     <tabTrigger>otrs.sopm.block.codeuninstall</tabTrigger>
 </snippet>

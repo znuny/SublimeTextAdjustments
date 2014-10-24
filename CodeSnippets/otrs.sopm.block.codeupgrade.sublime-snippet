@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-<CodeReinstall Type="${1:post|pre}"${2: Version="1.0.0"}><![CDATA[
+<CodeUpgrade Type="${1:post|pre}"${2: Version="1.0.0"}><![CDATA[
 # Notes on "Version" attribute:
 # skipped if \$UploadPackageVersion     < \$CodeBlockVersion
 # skipped if \$InstalledPackageVersion >= \$CodeBlockVersion
@@ -11,7 +11,7 @@
 
     $3
 
-${4:]]}></CodeReinstall>
+${4:]]}></CodeUpgrade>
 ]]></content>
-    <tabTrigger>otrs.sopm.block.codereinstall</tabTrigger>
+    <tabTrigger>otrs.sopm.block.codeupgrade</tabTrigger>
 </snippet>
