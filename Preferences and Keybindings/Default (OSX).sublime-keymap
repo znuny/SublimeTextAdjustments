@@ -18,6 +18,6 @@
             { "key": "following_text", "operator": "regex_match", "operand": "^\\s*$", "match_all": true }
         ]
     },
-    { "keys": ["super+v"], "command": "paste_and_indent" },
-    { "keys": ["super+shift+v"], "command": "paste" },
+    { "keys": ["super+shift+v"], "command": "paste_and_indent" },
+    { "keys": ["super+v"], "command": "paste" },
 ]
