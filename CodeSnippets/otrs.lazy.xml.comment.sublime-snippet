@@ -2,5 +2,5 @@
 	<content><![CDATA[
 <!-- $1 -->
 ]]></content>
-	<tabTrigger>otrs.lazy.xml.comment</tabTrigger>
+    <tabTrigger>otrs.lazy.xml.comment</tabTrigger>
 </snippet>

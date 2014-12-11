@@ -11,5 +11,5 @@
     </Setting>
 </ConfigItem>
 ]]></content>
-	<tabTrigger>otrs.config.xml.block.select</tabTrigger>
+    <tabTrigger>otrs.config.xml.block.select</tabTrigger>
 </snippet>

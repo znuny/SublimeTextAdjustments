@@ -8,5 +8,5 @@
 //${2:]]}></script>
 <!--dtl:js_on_document_complete-->
 ]]></content>
-	<tabTrigger>otrs.dtl.block.js</tabTrigger>
+    <tabTrigger>otrs.dtl.block.js</tabTrigger>
 </snippet>

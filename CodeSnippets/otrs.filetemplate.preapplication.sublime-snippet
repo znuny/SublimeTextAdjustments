@@ -45,5 +45,5 @@ sub PreRun {
 1;
 
 ]]></content>
-	<tabTrigger>otrs.filetemplate.preapplication</tabTrigger>
+    <tabTrigger>otrs.filetemplate.preapplication</tabTrigger>
 </snippet>

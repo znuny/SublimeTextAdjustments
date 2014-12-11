@@ -11,5 +11,5 @@
     </Setting>
 </ConfigItem>
 ]]></content>
-	<tabTrigger>otrs.config.xml.block.hash</tabTrigger>
+    <tabTrigger>otrs.config.xml.block.hash</tabTrigger>
 </snippet>

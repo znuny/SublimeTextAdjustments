@@ -180,5 +180,5 @@ sub LastDay {
 1;
 
 ]]></content>
-	<tabTrigger>otrs.filetemplate.stats.static</tabTrigger>
+    <tabTrigger>otrs.filetemplate.stats.static</tabTrigger>
 </snippet>

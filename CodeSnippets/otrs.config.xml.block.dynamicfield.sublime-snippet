@@ -13,5 +13,5 @@
     </Setting>
 </ConfigItem>
 ]]></content>
-	<tabTrigger>otrs.config.xml.block.dynamicfield</tabTrigger>
+    <tabTrigger>otrs.config.xml.block.dynamicfield</tabTrigger>
 </snippet>

@@ -2,5 +2,5 @@
 	<content><![CDATA[
 IsInteger($1)
 ]]></content>
-	<tabTrigger>otrs.lazy.variablecheck.IsInteger</tabTrigger>
+    <tabTrigger>otrs.lazy.variablecheck.IsInteger</tabTrigger>
 </snippet>

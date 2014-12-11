@@ -57,5 +57,5 @@
     </Filelist>
 </otrs_package>
 ]]></content>
-	<tabTrigger>otrs.filetemplate.sopm</tabTrigger>
+    <tabTrigger>otrs.filetemplate.sopm</tabTrigger>
 </snippet>

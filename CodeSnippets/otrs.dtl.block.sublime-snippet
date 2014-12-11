@@ -6,5 +6,5 @@
 
 <!-- dtl:block:$1 -->
 ]]></content>
-	<tabTrigger>otrs.dtl.block</tabTrigger>
+    <tabTrigger>otrs.dtl.block</tabTrigger>
 </snippet>

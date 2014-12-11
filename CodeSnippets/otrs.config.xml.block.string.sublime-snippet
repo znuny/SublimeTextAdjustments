@@ -9,5 +9,5 @@
     </Setting>
 </ConfigItem>
 ]]></content>
-	<tabTrigger>otrs.config.xml.block.string</tabTrigger>
+    <tabTrigger>otrs.config.xml.block.string</tabTrigger>
 </snippet>

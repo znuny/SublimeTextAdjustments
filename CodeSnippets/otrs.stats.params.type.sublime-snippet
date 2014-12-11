@@ -16,5 +16,5 @@ if ( \$Self->{ConfigObject}->Get('Ticket::Type') ) {
     };
 }
 ]]></content>
-	<tabTrigger>otrs.stats.params.type</tabTrigger>
+    <tabTrigger>otrs.stats.params.type</tabTrigger>
 </snippet>

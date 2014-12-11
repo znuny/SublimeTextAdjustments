@@ -5,5 +5,5 @@
 # Copyright (C) 2014 Znuny GmbH, http://znuny.com/
 # --
 ]]></content>
-	<tabTrigger>otrs.znuny.fileheader</tabTrigger>
+    <tabTrigger>otrs.znuny.fileheader</tabTrigger>
 </snippet>

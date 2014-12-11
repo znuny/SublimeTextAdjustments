@@ -19,7 +19,7 @@ sub new {
 
     # get needed objects
     NEEDED:
-    for my \$Needed (qw(ConfigObject TicketObject LogObject UserObject CustomerUserObject SendmailObject)) {
+    for my \$Needed (qw(ConfigObject DBObject MainObject TimeObject EncodeObject LogObject TicketObject UserObject CustomerUserObject SendmailObject)) {
         \$Self->{\$Needed} = \$Param{\$Needed} || die "Got no \$Needed!";
     }
 
@@ -66,5 +66,5 @@ sub Run {
 1;
 
 ]]></content>
-	<tabTrigger>otrs.filetemplate.ticketevent</tabTrigger>
+    <tabTrigger>otrs.filetemplate.ticketevent</tabTrigger>
 </snippet>

@@ -6,5 +6,5 @@
     \}},
 );
 ]]></content>
-	<tabTrigger>otrs.layout.block.inc_data.object</tabTrigger>
+    <tabTrigger>otrs.layout.block.inc_data.object</tabTrigger>
 </snippet>

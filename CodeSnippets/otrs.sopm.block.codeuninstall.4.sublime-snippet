@@ -5,13 +5,9 @@
 # skipped if \$UploadPackageVersion     < \$CodeBlockVersion
 # skipped if \$InstalledPackageVersion >= \$CodeBlockVersion
 
-    return if !\$Self->{MainObject}->Require('Kernel::System::ZnunyHelper');
-
-    my \$HelperObject = Kernel::System::ZnunyHelper->new();
-
     my @DynamicFieldRemove = ( 'Field1', 'Field2' );
-    \$HelperObject->_DynamicFieldsDisable( @DynamicFieldRemove );
-    \$HelperObject->_DynamicFieldsDelete( @DynamicFieldRemove );
+    \$Kernel::OM->Get('Kernel::System::ZnunyHelper')->_DynamicFieldsDisable( @DynamicFieldRemove );
+    \$Kernel::OM->Get('Kernel::System::ZnunyHelper')->_DynamicFieldsDelete( @DynamicFieldRemove );
 
 
     my %DynamicFieldDisableScreen = (
@@ -19,7 +15,7 @@
         #     DynamicFieldNameWithoutPrefix => 1,
         # },
     );
-    \$HelperObject->_DynamicFieldsScreenDisable( %DynamicFieldDisableScreen );
+    \$Kernel::OM->Get('Kernel::System::ZnunyHelper')->_DynamicFieldsScreenDisable( %DynamicFieldDisableScreen );
 
 
     my %LoaderData = (
@@ -28,11 +24,11 @@
                                 'Core.Agent.WPTicketOEChange.css',
                             ],
     );
-    \$HelperObject->_LoaderRemove( %LoaderData );
+    \$Kernel::OM->Get('Kernel::System::ZnunyHelper')->_LoaderRemove( %LoaderData );
 
     $3
 
 ${4:]]}></CodeUninstall>
 ]]></content>
-    <tabTrigger>otrs.sopm.block.codeuninstall</tabTrigger>
+    <tabTrigger>otrs.sopm.block.codeuninstall.4</tabTrigger>
 </snippet>

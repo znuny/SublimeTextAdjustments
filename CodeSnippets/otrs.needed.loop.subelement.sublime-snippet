@@ -13,5 +13,5 @@ for my \$Needed ( qw($1) ) {
     return;
 }
 ]]></content>
-	<tabTrigger>otrs.needed.loop.subelement</tabTrigger>
+    <tabTrigger>otrs.needed.loop.subelement</tabTrigger>
 </snippet>

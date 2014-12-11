@@ -100,5 +100,5 @@ sub ${5:FunctionName} {
 1;
 
 ]]></content>
-	<tabTrigger>otrs.filetemplate.system</tabTrigger>
+    <tabTrigger>otrs.filetemplate.system</tabTrigger>
 </snippet>

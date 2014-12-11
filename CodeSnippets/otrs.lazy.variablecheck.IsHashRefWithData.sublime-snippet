@@ -2,5 +2,5 @@
 	<content><![CDATA[
 IsHashRefWithData(${1:\\})
 ]]></content>
-	<tabTrigger>otrs.lazy.variablecheck.IsHashRefWithData</tabTrigger>
+    <tabTrigger>otrs.lazy.variablecheck.IsHashRefWithData</tabTrigger>
 </snippet>

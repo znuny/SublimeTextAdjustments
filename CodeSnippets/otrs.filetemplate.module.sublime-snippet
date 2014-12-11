@@ -54,5 +54,5 @@ sub Run {
 1;
 
 ]]></content>
-	<tabTrigger>otrs.filetemplate.module</tabTrigger>
+    <tabTrigger>otrs.filetemplate.module</tabTrigger>
 </snippet>

@@ -7,5 +7,5 @@ $2
 
 </otrs_config>
 ]]></content>
-	<tabTrigger>otrs.filetemplate.config</tabTrigger>
+    <tabTrigger>otrs.filetemplate.config</tabTrigger>
 </snippet>

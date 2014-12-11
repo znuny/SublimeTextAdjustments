@@ -6,5 +6,5 @@
     \}},
 );
 ]]></content>
-	<tabTrigger>otrs.layout.block.inc_data.self</tabTrigger>
+    <tabTrigger>otrs.layout.block.inc_data.self</tabTrigger>
 </snippet>

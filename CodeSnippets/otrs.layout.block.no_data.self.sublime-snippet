@@ -4,5 +4,5 @@
     Name => '$1',
 );
 ]]></content>
-	<tabTrigger>otrs.layout.block.no_data.self</tabTrigger>
+    <tabTrigger>otrs.layout.block.no_data.self</tabTrigger>
 </snippet>

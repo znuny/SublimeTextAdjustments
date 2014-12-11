@@ -7,5 +7,5 @@ Im OTRS Standard ${2:...}. Dieses Paket erweitert das System um die Funktionalit
 ${4:...}
 ${5:   * ListItem}
 ]]></content>
-	<tabTrigger>otrs.filetemplate.doc.feature</tabTrigger>
+    <tabTrigger>otrs.filetemplate.doc.feature</tabTrigger>
 </snippet>

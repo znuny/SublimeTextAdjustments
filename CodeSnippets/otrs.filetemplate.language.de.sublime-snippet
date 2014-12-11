@@ -18,5 +18,5 @@ sub Data {
 
 1;
 ]]></content>
-	<tabTrigger>otrs.filetemplate.language.de</tabTrigger>
+    <tabTrigger>otrs.filetemplate.language.de</tabTrigger>
 </snippet>
