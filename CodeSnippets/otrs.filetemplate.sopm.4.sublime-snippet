@@ -7,9 +7,9 @@
 
     <Version>1.0.0</Version>
 
-    <PackageRequired Version="1.0.9">Znuny4OTRS-Repo</PackageRequired>
+    <PackageRequired Version="2.0.2">Znuny4OTRS-Repo</PackageRequired>
 
-    <Framework>${2:3.3.x}</Framework>
+    <Framework>${2:4.0.x}</Framework>
 
     <Vendor>Znuny GmbH</Vendor>
     <URL>http://znuny.com/</URL>
@@ -57,5 +57,5 @@
     </Filelist>
 </otrs_package>
 ]]></content>
-    <tabTrigger>otrs.filetemplate.sopm</tabTrigger>
+    <tabTrigger>otrs.filetemplate.sopm.4</tabTrigger>
 </snippet>
