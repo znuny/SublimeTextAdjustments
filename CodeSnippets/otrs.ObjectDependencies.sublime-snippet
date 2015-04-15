@@ -26,6 +26,7 @@ our @ObjectDependencies = (
     'Kernel::System::TemplateGenerator',
     'Kernel::System::Time',
     'Kernel::System::Type',
+    'Kernel::System::Ticket',
     'Kernel::System::User',
     'Kernel::System::Valid',
     'Kernel::System::Web::Request',
