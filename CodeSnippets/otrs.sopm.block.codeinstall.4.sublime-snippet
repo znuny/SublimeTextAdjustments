@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-<CodeInstall Type="${1:post|pre}"${2: Version="1.0.0"}><![CDATA[
+<CodeInstall Type="${1:post|pre}"><![CDATA[
 # Notes on "Version" attribute:
 # skipped if \$UploadPackageVersion     < \$CodeBlockVersion
 # skipped if \$InstalledPackageVersion >= \$CodeBlockVersion
